@@ -1,0 +1,148 @@
+
+.background{
+  background: rgb(14, 13, 13);
+    width:90%;
+    /* border-radius:10px; */
+    filter: drop-shadow(8px 8px 16px black);
+    margin-left:5%;
+    color:white;
+    margin-top: 5%;
+  }
+  .title-content{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border-bottom: 3px solid gold;
+  /* background:gold; */
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+}
+.title-content h1{
+  font-family:sans-serif;
+  padding-left: 15px;
+  font-size: 40px;
+  color: white;
+  letter-spacing:2px;
+}
+.action button{
+  border: none;
+  background:gold;
+  color: rgb(8, 8, 8);
+  font-weight:666;
+  margin-top:30px;
+  margin-right:40px;
+  font-size: 19px;
+  padding-bottom: 4px;
+  font-family: sans-serif;
+width:150px;
+height:40px; 
+border-radius:5px;
+cursor:pointer;
+}
+.add{
+  position:relative;
+  top:5px;
+  font-weight: bold;
+}
+/* Header */
+.header{
+  background: rgb(19, 17, 17);
+    margin-top: -15.6px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+.header ul{
+  list-style-type: none;
+ padding-top: 10px;
+  display:grid;
+  grid-template-columns: 170px 150px 259px 220px 100px; 
+
+}
+.header li{
+
+    height:50px;
+    font-size:25px;
+    font-family: sans-serif;
+
+}
+.info-act,.info-art,.info-gen,.info-rel{
+    letter-spacing:3px;
+}
+/* .info-art{
+padding-left:35px;
+}
+.info-act{
+padding-right:35px;
+}
+.info-gen{
+  padding-left: 15px;
+}
+.info-sign{
+  padding-right:20px;
+} */
+
+.table{
+/* 
+  margin-top:35px; */
+}
+.table ul{
+  display: flex;
+  flex-direction:column;
+  gap:1em;
+  list-style-type: none;
+width: 20%;
+}
+.table li{
+  color: rgb(252, 252, 252);
+  width:500%;
+  height:50px;
+  margin-left: -40px;
+      border-bottom:1px solid #ccc;
+}
+.table-grid{
+    display: flex;
+    flex-direction: row;
+    padding-top: -900px;
+    gap:2em;
+justify-content:space-between;
+
+    /* justify-content:space-evenly; */
+}
+.table-grid img{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  margin-left:10px;
+  margin-top:3px;
+  object-fit: fill;
+}
+.artist-info{
+  display: flex;
+  flex-direction: row;
+}
+.artist-bio{
+  position: absolute;
+  margin-left: 41px;
+  padding-top:4px;
+  padding-left:16px;
+  display: flex;
+  flex-direction: column;
+  padding-top: -40px;
+  float: right;
+}
+.icon{
+  margin-right:60px;
+  margin-top:14px;
+}
+.artist-name{
+  font-size:20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:900;
+}
+.artist-gen{
+  font-size: 15px;
+  font-weight:700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
