@@ -57,7 +57,6 @@ const Admin = () => {
 <div className='logOut-icon'><MdKeyboardArrowRight size={40}/></div>
             </div>
         </footer>
-    
     </aside>
    <main>
      <Outlet/>

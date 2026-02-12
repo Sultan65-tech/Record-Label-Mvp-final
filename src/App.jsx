@@ -1,12 +1,11 @@
 
 // import { useEffect, useState } from 'react'
 import './index.css'
-// import {Routes,Route} from "react-router-dom"
-// import Dashboard from "./components/Dashboard"
-// import Catalogue from "./components/Catalogue"
-// import NotFound  from './components/NotFound'
-import Login from "./components/Login"
-// import Admin from "../src/components/Admin"
+import {Routes,Route} from "react-router-dom"
+import Dashboard from "./components/Dashboard"
+import Catalogue from "./components/Catalogue"
+import NotFound  from './components/NotFound'
+import Admin from "../src/components/Admin"
 
 
 function App() {
@@ -18,7 +17,8 @@ function App() {
 
   return (
     <>
-    {/* <Routes>
+    <Routes>
+          <Route path="/" element={<Dashboard/>}/>
           <Route path="/Dashboard" element={<Dashboard/>}/>
         <Route path="/catalogue" element={<Catalogue/>}/>
         <Route path="/catalogue" element={<Catalogue/>}/>
@@ -26,7 +26,7 @@ function App() {
         <Route path="/catalogue" element={<Catalogue/>}/>
         <Route path="/catalogue" element={<Catalogue/>}/>
         <Route path="*" element={<NotFound/>}/>
-    </Routes> */}
+    </Routes>
 
     {/* <div>
       <h1>{count}</h1>
@@ -36,8 +36,8 @@ function App() {
       }}>Check</button>
     </div>
     <h1>Hey</h1> */}
-{/* <Admin/> */}
-<Login/>
+<Admin/> 
+
     </>
   )
 }
