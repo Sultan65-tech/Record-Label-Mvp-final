@@ -1,0 +1,36 @@
+paste into the tailwind.config.js
+
+
+import daisyui from "daisyui"
+
+/** @type {import('tailwindcss).Config} */
+export default {
+    content: ["./index.html, "./src/**/*,{js,ts,jsx,tsx}"],
+    theme:{
+        extend: {},
+    },
+    plugins:{daisyui},
+    daisyui:{
+        theme;["light" ,"dark,"forest"]
+    }
+}; 
+
+
+
+
+// LocalStorage
+
+
+ // const[count,setCount] = useState(+localStorage.getItem("count") || 0)
+  // useEffect(()=>{
+  //   localStorage.setItem("count", count.toString())
+  // },[count])
+
+
+  <div>
+      <h1>{count}</h1>
+      <button onClick={()=>{
+        setCount(count + 1)
+          window.navigator.vibrate(60)
+      }}>Check</button>
+    </div>
