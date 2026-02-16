@@ -49,4 +49,37 @@ export const  Data =[
         Image
     }
 ]
+
+export const Music=[
+  {
+  id:1,
+  Image,
+ artist:"Big hookz ft Big D",
+  title:"Sundown"
+  },
+    {
+  id:2,
+  Image,
+ artist:"Big hookz ft Big D",
+  title:"Sundown"
+  },
+    {
+  id:3,
+  Image,
+ artist:"Big hookz ft Big D",
+  title:"Sundown"
+  },
+    {
+  id:4,
+  Image,
+ artist:"Big hookz ft Big D",
+  title:"Sundown"
+  },
+    {
+  id:5,
+  Image,
+ artist:"Big hookz ft Big D",
+  title:"Sundown"
+  }
+]
 // export default Data

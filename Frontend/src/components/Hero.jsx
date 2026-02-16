@@ -19,12 +19,13 @@ const Hero = () => {
 <Navbar/>
 
 <div className="background-video">
-       <video autoplay muted loop>
+       <video autoPlay muted loop>
            <source src={Video}   type="video/mp4"></source>
       </video>
+      
      </div>
-    <div className="content">
         <Stars/>
+    <div className="content">
       <h1>Stream the latest hits and hidden gems, all in one place.</h1>
          <div className="signed">
         <img src={justinBeiber}   style={{position:"relative",left:"48px",zIndex:"-1"}} alt=""/>
@@ -33,9 +34,9 @@ const Hero = () => {
       <span>Over 300+ artists.</span>
       </div>
     </div>
-<Stars/>
 <Star/>
-<Star/>
+
+
   </div>
      
     </>
