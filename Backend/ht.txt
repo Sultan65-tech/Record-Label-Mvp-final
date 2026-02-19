@@ -1,8 +1,28 @@
+###
+PUT http://localhost:3000/api/artists/1
+Content-Type: application/json
+
+{
+    "id":1,
+    "email":"Yagami_iie@32332.com",
+    "password":"damiii01"
+}
+
+###
+
+DELETE http://localhost:3000/api/artists/1
+
+
+
+main Logic
+
+
+import Artist from "../models/Artists.js"
 import Artists from "../data/db.js"
 export async  function  getAllartists(req,res){
     try{
-    const art =await Artists ;
-    console.log(art)
+    // const art =await Artist.find();
+    // console.log(art)
     res.status(200).json(art)
 }catch(err){
     console.log("Error in get controller")

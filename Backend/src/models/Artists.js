@@ -8,21 +8,12 @@ import mongoose from "mongoose"
 
 const artistSchema = new mongoose.Schema(
     {
-        name:{
+        artist_name:{
             type:String,
             required:true,
         },
-        genre:{
-        type:String,
-        required:true
-        },
-       music_type: {
-         type:String
-        },
-       total_song:{
-       type:String,
-       required:true
-       }
+        bio:String,
+        genre:[String],
     },
     {timestamps:true} //The signed date of the artist
 )
@@ -30,6 +21,7 @@ const artistSchema = new mongoose.Schema(
 
 const Artist = mongoose.model("Artist",artistSchema)
 
+export default Artist;
 
 
 
