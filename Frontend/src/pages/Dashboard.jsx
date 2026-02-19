@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Admin.css"
 import Card from "./Card"
-import Table from "../components/Table"
+import Table from "./Table"
 const Dashboard = () => {
   return (
     <div>

@@ -7,13 +7,12 @@ import Newsletter from "../components/Newsletter"
 import ArtistCard from '../components/ArtistCard'
 import Release from "../components/Release"
 import Footer from '../components/Footer'
-const change= Music.length=3;
-console.log(change)
+
 const Home = () => {
   return (
     <>
    
-    <Hero/>
+    <Hero />
    <Release/>
 <Join/>
 <Newsletter/>

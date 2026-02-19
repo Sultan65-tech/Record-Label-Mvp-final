@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Navbar.css"
 
-import Artist from "../IMAGES/big man.png"
+
 
 const ArtistCard = (props) => {
   return (

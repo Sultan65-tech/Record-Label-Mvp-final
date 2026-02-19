@@ -1,7 +1,10 @@
 import React from 'react'
 import { Music } from '../Data'
 import ArtistCard from './ArtistCard'
+// import { useState } from 'react';
 
+const change= Music.length=3;
+console.log(change)
 const Release = () => {
   return (
     <>

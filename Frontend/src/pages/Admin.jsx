@@ -1,10 +1,10 @@
 import React from 'react'
 import {Outlet,Link} from "react-router-dom"
 import Dashboard from "./Dashboard"
-import Catalogue from "../components/Catalogue"
+import Catalogue from "./Catalogue"
 import NotFound from "./NotFound"
 import Card from "./Card"
-import Table from "../components/Table"
+import Table from "./Table"
 import { GiProgression } from "react-icons/gi";
 import { FaUsers } from "react-icons/fa6";
 import { GrCatalog } from "react-icons/gr";

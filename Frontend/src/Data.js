@@ -1,8 +1,8 @@
-import Image from "./Images/justin1.jpg"
+import Image from "./Images/big man.png"
 export const  Data =[
     {
       id:1,
-        name:"Sultan",
+        name:"Big Hookz",
         Genre:"Afro",
         Total:345,
         Sign:"May,02,2025",
@@ -10,7 +10,7 @@ export const  Data =[
     },
       {
         id:12,
-        name:"Sultan",
+        name:"Big Hookz",
         Genre:"Afro",
         Total:345,
         Sign:"May,02,2025",
@@ -18,7 +18,7 @@ export const  Data =[
     },
       {
         id:2,
-        name:"Sultan",
+        name:"Big Hookz",
         Genre:"Afro",
         Total:345,
         Sign:"May,02,2025",
@@ -26,7 +26,7 @@ export const  Data =[
     },
       {
         id:4,
-        name:"Sultan",
+        name:"Big Hookz",
         Genre:"Afro",
         Total:345,
         Sign:"May,02,2025",
@@ -34,7 +34,7 @@ export const  Data =[
     },
       {
         id:5,
-        name:"Sultan",
+        name:"Big Hookz",
         Genre:"Afro",
         Total:345,
         Sign:"May,02,2025",
@@ -42,7 +42,7 @@ export const  Data =[
     },
       {
         id:6,
-        name:"Sultan",
+        name:"Big Hookz",
         Genre:"Afro",
         Total:345,
         Sign:"May,02,2025",

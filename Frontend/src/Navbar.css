@@ -122,7 +122,7 @@ header b{
   color: gold;
   border-bottom: 2px solid gold;
 }
-video{
+.navbar ul li a:hover video{
   width:100%;
   height:670px;
   position: absolute;
@@ -704,4 +704,356 @@ video{
 .fieldset{
   height:350px;
 }
+}
+
+
+
+
+
+/* Music-section */
+
+.container1{
+  height:95vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-size:cover;
+  background-image: url("../src/Images/music-edit.jpg");
+}
+
+.music-section{
+  position: relative;
+    top:120px;
+    /* overflow-y: hidden;
+    overflow-y: hidden; */
+}
+video{
+  width:100%;
+  height:700px;
+  position: absolute;
+  top:0;
+    opacity:0.6;
+    object-fit: cover;
+    z-index: -1;
+}
+.background-video{
+z-index: -1;
+}
+.text{
+    padding-top: 80px;
+}
+.music-section p{
+  font-size:25px;
+  font-weight:500;
+  padding-top:15px;
+    text-align: center;
+   color:#EAEAEA;
+   font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+}
+
+.music-section h1{
+    font-size: 70px;
+    color:#EAEAEA;
+        text-align: center;
+   padding: 5px 4px;
+}
+.call-to-action{
+    margin-left:25em;
+    margin-top:2em;
+    display:flex;
+    gap: 2em;
+}
+.call-to-action button{
+    width: 300px;
+    height:50px;
+    border: none;
+    font-size:20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.one{
+  background: gold;
+}
+.one:hover{
+  border: 4px solid gold;
+  background: transparent;
+  color: white;
+  transition: 0.2s ease-in;
+  scale:0.9;
+}
+
+/* NEW RELEASE */
+.musicians{
+  margin-top:48%;
+  
+}
+
+ .music-image{
+              margin: 25px;
+        height: 300px;
+        width: 500px;
+        background-image: URL("../src/Images/justin1.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+            }
+.music-player h1{
+  text-align: center;
+  color:gold;
+  font-size:40px;
+    padding-top:5px;
+    padding-bottom:20px;
+  font-weight:555;
+  text-shadow: 2px 3px 3px black;
+}
+.music-player-text{
+  width:80%;
+  height:90px;
+  margin-top: 3%;
+  margin-left:7%;
+  margin-bottom:4%;
+}
+.music-flex{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.music-title{
+  text-align: center;
+}
+.music-title h2{
+  font-size:48px;
+  color: white;
+  font-family:"Roboto", sans-serif;
+  padding: 15px 0;
+}
+.music-title p{
+  font-size: 25px;
+  color: white;
+  padding-bottom: 5PX;
+}
+.controls{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-direction: row;
+  gap:1em; */
+}
+.icon1{
+  fill: gold;
+padding: 15px;
+    font-size:50px;
+    width: 120px;
+    cursor: pointer;
+}
+   /* Define the slider width so that it scales properly */
+    
+    .slider_container {
+        width: 80%;
+        max-width: 700px;
+        color: #ffc800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Modify the appearance of the slider */
+    
+    .seek_slider,
+    .volume_slider {
+        appearance: none;
+        height: 5px;
+        background: #ffe815;
+        opacity: 0.7;
+        transition: opacity .2s;
+    }
+    /* Modify the appearance of the slider thumb */
+    
+    .seek_slider::-webkit-slider-thumb,
+    .volume_slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #ffd900;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    /* Change the opacity when mouse is hovered */
+    
+    .seek_slider:hover,
+    .volume_slider:hover {
+        opacity: 1.0;
+    }
+    
+    .seek_slider {
+        width: 70%;
+    }
+    
+    .volume_slider {
+        width: 25%;
+    }
+    
+    .current-time,
+    .total-duration {
+        padding: 10px;
+    }
+    
+    i.fa-volume-down,
+    i.fa-volume-up {
+        padding: 20px;
+    }
+    /* Change the mouse cursor to a pointer
+    when hovered over */
+    
+    i.fa-play-circle,
+    i.fa-pause-circle,
+    i.fa-step-forward,
+    i.fa-step-backward {
+        cursor: pointer;
+    }
+    .testimonial{
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    }
+    .testimonial-heading{
+          width: 100%;
+    height: 80px;
+    margin-top: 5%;
+    margin-bottom:5%;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    /* background: black; */
+    color: gold;
+    filter: drop-shadow(8px 8px 8px rgb(39, 36, 29));
+    }
+    .testimonial-heading h1{
+      letter-spacing:3px;
+    }
+.testimonial-grid{
+  display:grid;
+ grid-template-columns: 100px 100px 100px ;
+   justify-content: center;
+   column-gap:17em;
+   row-gap: 2em;
+   align-items: center;
+}
+.testimonial-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-flex img{
+   border:3px solid gold;
+}
+.testimonial-flex p{
+  font-size: 20px;
+  padding-top: 15px;
+  color:white;
+  text-align: center;
+}
+
+    /* FAVOURITE ARTIST SECTION */
+    #favorites{
+      /* position: relative; */
+      margin-top:10%;
+      text-align: center;
+      color: white;
+    }
+    .fav-text h1{
+      font-size:40px;
+      padding-bottom: 50px;
+    }
+    /* Recommendation Section */
+     .music-list h1{
+      text-align: left;
+      font-size: 48px;
+      color: gold;
+     }
+        .music-list{
+          flex: 3;
+        }
+        .music-list div{
+              display: flex;
+    border-bottom: 2px solid gold;
+    justify-content: space-between;
+        }
+        .music-list h3 {
+            margin: 10px 0;
+            font-size: 28px;
+            font-weight: normal;
+            color:white;
+        }
+        .music-info{
+          flex: 2;
+    border-radius: 10px 0 0 10px;
+    display: block;
+    padding-left: 50px;
+        }
+        .music-info img {
+    width: 350px;
+    max-height: 300px;
+    margin: 40px 40px 40px 0;
+    border-radius: 20px;
+}
+.music-info h2{
+      /* margin: 10px 0; */
+    font-size:36px;
+    color:gold;
+}
+.music-info h5 {
+    font-size: 28px;
+    color:gold;
+    font-weight: 300;
+    opacity:70%;
+    padding: 20px 0;
+}
+.music-info button{
+    padding: 10px 40px;
+    font-size: 32px;
+    background-color:gold;
+    border-radius: 10px;
+    margin-top:20px;
+    border: none;
+}
+
+
+
+/* Studio-section */
+.background-studio{
+    width:100%;
+  height:670px;
+  position:relative;
+  top:0;
+    opacity:0.7;
+    object-fit:cover;
+}
+.collaboration-logo{
+  /* background:gold; */
+margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content:space-evenly; */
+}
+.collaboration-logo div{
+  margin-top:2%;
+}
+.collaboration-logo img{
+  width:80px;
+  height: 80px;
+  border-radius: 100%;
+}
+.testimonial{
+  background:gold;
+  width:100%;
+  height:80vh;
+  background-image:url();
 }

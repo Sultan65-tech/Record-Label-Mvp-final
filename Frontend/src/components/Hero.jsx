@@ -13,9 +13,6 @@ const Hero = () => {
   return (
     <>
        <div className="container">
-{/* <Star/> */}
-
-
 <Navbar/>
 
 <div className="background-video">

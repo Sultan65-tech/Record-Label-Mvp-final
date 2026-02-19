@@ -1,19 +1,34 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import "../Table.css"
 import Artists from "../pages/Artists.jsx"
-// import Artist from "../Images/big man.png"
+import { useState } from 'react'
 import { MdAdd} from "react-icons/md"
 import Logo from "../Images/logo-removebg-preview.png"
-import { Data }  from "../Data.js"
+import { useEffect } from 'react'
 
-// var show = Data.map((data)=>{
-//     console.log(data.name); 
-// })
-// console.log(show)
+
+
 const Table = () => {
+  const [artist,setArtist] = useState([])
+
+    useEffect(()=>{
+        const Api = async ()=>{
+    try {
+     const  response= await fetch("http://localhost:3000/api/artists");
+      let body=await response.json();
+      setArtist(body)
+   }catch (error) {
+        console.log("Error in Table API",error)
+    }
+};
+    Api();
+    },[])
+{localStorage.setItem('artists', JSON.stringify(artist))}
+
   return (
     <>
-    
+{/* localStorage.setItem('myArtists', JSON.stringify(mockDB.artists)); */}
  <div className="background">
     {/* <h1>Artist</h1> */}
     <div className="title-content">
@@ -22,7 +37,7 @@ const Table = () => {
         
         </div>
         <div className="action">
-            <button>Add Artist <MdAdd size={26} className='add' color="black"/></button>
+       <Link to="/"><button>Add Artist <MdAdd size={26} className='add' color="black"/></button></Link>
         </div>
     </div>
     <div className='header'>
@@ -45,9 +60,10 @@ const Table = () => {
         </ul>
     </div>
        <div className='table'>
-            {Data.map((data)=>{
+            {artist.map((datum)=>{
                 return(
-        <Artists key={data.id} image={data.Image} name={data.name} genre={data.Genre} total={data.Total} sign={data.Sign}/>
+                    
+        <Artists key={datum.id}  name={datum.name} genre={datum.genre} total={datum.total} sign={datum.signedDate}/>
                 )
              })}
              {/* <Artists name="Sultan"/> */}

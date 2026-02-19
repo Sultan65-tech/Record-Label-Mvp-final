@@ -1,13 +1,10 @@
 
-// import { useEffect, useState } from 'react'
-import './index.css'
 import {Routes,Route} from "react-router-dom" 
 import Home from "./pages/Home"
 import Music from "./pages/Music"
 import Studio from "./pages/Studio"
 import Events from "./pages/Events"
 import About from "./pages/About"
-
 import NotFound from "./pages/NotFound"
 
 function App() {
@@ -22,6 +19,7 @@ function App() {
         <Route path="/About" element={<About/>}/>
         <Route path="*" element={<NotFound/>}/>
     </Routes>
+
 
     </>
   )
