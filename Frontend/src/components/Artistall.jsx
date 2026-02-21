@@ -12,7 +12,7 @@ const Artistall = () => {
     {Data.map((music)=>{
             return(
              <div className='testimonial-flex'>
-                <div><img src={music.Image} width={"300px"} height={"300px"} style={{borderRadius:"150px"}} alt="" /></div>
+                <div><img key={music.id} src={music.Image} width={"300px"} height={"300px"} style={{borderRadius:"150px"}} alt="" /></div>
                 <div><p>{music.name}</p></div>
              </div>
             )

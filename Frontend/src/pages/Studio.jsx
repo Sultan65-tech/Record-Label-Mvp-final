@@ -2,32 +2,39 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Logo from "../Images/logo-removebg-preview.png"
 import Video from "../IMAGES/vid.mp4"
+import Artistall from "../components/Artistall"
+import Newsletter from "../components/Newsletter"
+import Footer from "../components/Footer"
+import Carousel from "../components/Carousel"
 
 const Studio = () => {
   return (
  <>
  <Navbar/>
  <div className="background-studio">
-        <video autoPlay muted loop>
-            <source src={Video}   type="video/mp4"></source>
-       </video>
+       <video src={Video} controls playsInline  autoPlay loop></video>
       </div>
+        <marquee behavior="right" direction="right">
       <div className="collaboration-logo">
-        <marquee direction="right"><div><img src={Logo} alt=""/></div></marquee>
-        <marquee direction="right"><div><img src={Logo} alt=""/></div></marquee>
-       <marquee direction="left"> <div><img src={Logo} alt=""/></div></marquee>
-        <marquee direction="right"><div><img src={Logo} alt=""/></div></marquee>
+        <div><img src={Logo} alt=""/></div>
+        <div><img src={Logo} alt=""/></div>
+      <div><img src={Logo} alt=""/></div>
+        <div><img src={Logo} alt=""/></div>
+         <div><img src={Logo} alt=""/></div>
+          <div><img src={Logo} alt=""/></div>
+           <div><img src={Logo} alt=""/></div>
+            <div><img src={Logo} alt=""/></div>
+             <div><img src={Logo} alt=""/></div>
+              <div><img src={Logo} alt=""/></div>
+               <div><img src={Logo} alt=""/></div>
+                <div><img src={Logo} alt=""/></div>
+                 <div><img src={Logo} alt=""/></div>
       </div>
-      <div className="testimonial">
-        <div className="testimonial-grid">
-          <div>
-
-          </div>
-          <div>
-            
-          </div>
-        </div>
-      </div>
+        </marquee>
+        <Carousel/>
+        <Artistall/>
+        <Newsletter/>
+        <Footer/>
  </>
   )
 }
