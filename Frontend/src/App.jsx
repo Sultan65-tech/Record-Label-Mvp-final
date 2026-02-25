@@ -7,6 +7,7 @@ import Events from "./pages/Events"
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
 
+
 function App() {
   
   return (

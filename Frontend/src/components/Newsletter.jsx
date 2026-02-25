@@ -27,7 +27,7 @@ musical introvention.</p>
           <input type="text" name="" autoComplete="on" id="Fname" placeholder="Input your First-name"/><br/>
           <input type="text" name="" autoComplete="on" id="Lname" placeholder="Input your First-name"/><br/>
           <input type="email" name="" autoComplete="on" id="Email" placeholder="Input your Email address"/>
-          <p><input type="checkbox"/><label for="get">Get Daily Recommendations and Updates</label></p>
+          <p><input type="checkbox"/><label>Get Daily Recommendations and Updates</label></p>
           <button type="submit">Subscribe</button>
           </fieldset>
       </form>

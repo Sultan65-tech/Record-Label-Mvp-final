@@ -16,7 +16,7 @@ const Release = () => {
         {
               Music.map((music)=>{
                 return(
-                <ArtistCard key={music.id} image={music.Image} title={music.title} artist={music.artist}/>
+                <ArtistCard key={music.id} image={music.image} title={music.title} artist={music.artist}/>
               )
               })
             }

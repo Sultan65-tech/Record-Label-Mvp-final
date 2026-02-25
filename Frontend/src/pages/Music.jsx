@@ -4,8 +4,12 @@ import Footer from "../components/Footer"
 import Newletter from '../components/Newsletter'
 import Artistall from '../components/Artistall'
 import {MdStars} from "react-icons/md"
+import {Data} from '../Data'
 import "../Navbar.css"
 import Img from "../Images/WHIZDOM (2).jpg"
+
+const change = Data.length=3;
+console.log(change)
 
 const Music = () => {
   return (
@@ -64,7 +68,9 @@ const Music = () => {
 </div>
   </div> 
   <div className='musicians'>
-      <Artistall/>
+    {Data.map((music)=>{
+      <Artistall image={music.image} name={music.name}/>
+    })}
   </div>
 <section id="favorites">
     <div className="fav-text">

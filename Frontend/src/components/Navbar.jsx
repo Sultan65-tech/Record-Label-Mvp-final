@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
    <header>
       <div className="navbar">
-        <h1><img src={Logo} className="logo" /><b style={{color: "whitesmoke"}}>NO LIMITS<br/>RECORDS <br/><h style={{color:"rgb(238, 186, 143)"}}>MIDWEST</h></b></h1>
+        <h1><img src={Logo} className="logo" /><b style={{color: "whitesmoke"}}>NO LIMITS<br/>RECORDS <br/><div style={{color:"rgb(238, 186, 143)"}}>MIDWEST</div></b></h1>
         <ul className="animate__animated animate__backInRight">
           <li><Link to="/">HOME</Link></li>
           <li><Link to="/Music">MUSIC</Link></li>
