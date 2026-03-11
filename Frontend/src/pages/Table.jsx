@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-import "../Table.css"
+import "../Table.min.css"
 import Artists from "../pages/Artists.jsx"
 import { useState } from 'react'
 import { MdAdd} from "react-icons/md"

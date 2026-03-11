@@ -1,8 +1,8 @@
 import {  useState } from "react"
 import {Link} from "react-router-dom"
-import "../bootstrap.css"
-import"../Login.css"
-import Admin from "../components/Admin"
+// import "../bootstrap.module.css"
+import"../Navbar.css"
+// import Admin from "../components/Admin"
 
 import Logo from "../Images/logo-removebg-preview.png"
 const Login = () => {
@@ -40,7 +40,7 @@ const Login = () => {
 
   return (
 
- <>
+ <div className="body">
     <div className="parent">
      <div className="left">
        <div><img className="img" src={Logo} alt="" width="100px"  height="150px" /></div>
@@ -89,7 +89,7 @@ const Login = () => {
 </div> 
    </div>
           </div>
-   </>
+   </div>
   )
 }
 

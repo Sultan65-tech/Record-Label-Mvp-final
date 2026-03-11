@@ -5,8 +5,9 @@ import Music from "./pages/Music"
 import Studio from "./pages/Studio"
 import Events from "./pages/Events"
 import About from "./pages/About"
+import Login from "./components/Login"
 import NotFound from "./pages/NotFound"
-
+import "./index.css"
 
 function App() {
   
@@ -18,9 +19,9 @@ function App() {
         <Route path="/Studio" element={<Studio/>}/>
         <Route path="/Events" element={<Events/>}/>
         <Route path="/About" element={<About/>}/>
+           <Route path="/Login" element={<Login/>}/>
         <Route path="*" element={<NotFound/>}/>
     </Routes>
-
 
     </>
   )
