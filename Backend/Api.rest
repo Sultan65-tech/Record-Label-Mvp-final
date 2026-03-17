@@ -8,3 +8,6 @@ Content-Type: application/json
     "bio":"Programmer",
     "genre":"Hip-Hop"
 }
+###
+DELETE http://localhost:3000/api/artists/69b76336e6b2a09487d8892a
+

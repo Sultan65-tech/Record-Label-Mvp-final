@@ -94,6 +94,10 @@ width:150%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   /* padding-left: 60px; */
 }
+input{
+  width: 200px;
+  height: 80px;
+}
 .form-label-group {
   position: relative;
   margin-bottom:2rem;
@@ -106,7 +110,7 @@ width:150%;
 
 .form-label-group > label {
   position: absolute;
-  top: 0;
+  top:-5px;
   left: 0;
   display: block;
   width: 100%;
@@ -116,6 +120,7 @@ width:150%;
   border: 1px solid transparent;
   border-radius: .25rem;
   transition: all .1s ease-in-out;
+  /* z-index: -9; */
 }
 
 .form-label-group input::-webkit-input-placeholder {

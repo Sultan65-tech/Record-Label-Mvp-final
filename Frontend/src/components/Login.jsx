@@ -1,41 +1,15 @@
 import {  useState } from "react"
 import {Link} from "react-router-dom"
-// import "../bootstrap.module.css"
+// import "../bootstrap.css"
 import"../Navbar.css"
+// import "../Login.css"
 // import Admin from "../components/Admin"
 
 import Logo from "../Images/logo-removebg-preview.png"
 const Login = () => {
   
-  const [nameval,setNameVal]= useState({
-    Email: "",
-    password:""
-  })
-
-
-  const handleChange = (event)=>{
-    const {name,value}=event.target;
- 
-    setNameVal(preVal => {
-   return {
-    ...preVal,
-    [name]: value
-  }
-});
-// console.log(value)
-  }
-  // console.log(nameval)
-
-  // const[user,setUser] = useState(localStorage.getItem("user") || "")
-  // useEffect(()=>{
-  //   localStorage.setItem("user",user)
-  // },[user])
-
-
-  function handleClick(event){
-    event.preventDefault();
-    // setUser(`Welcome,${nameval.Email}`)
-  }
+const [form,setForm] = useState({first:"",second:""});
+  
 
 
   return (
@@ -53,12 +27,12 @@ const Login = () => {
              </div>
     
           <div className="form-label-group">
-            <input  type="text"  className="form-control" onChange={handleChange} value={nameval.Email} name="Email"  placeholder="Email address" autoFocus />
+            <input  type="text"  className="form-control"   name="Email"  placeholder="Email address" autoFocus />
             <label htmlFor="inputEmail">Email address</label>
           </div>
     
           <div className="form-label-group">
-            <input type="password" className="form-control" onChange={handleChange} value={nameval.password} name="password" placeholder="password" autoFocus />
+            <input type="password" className="form-control"   name="password" placeholder="password" autoFocus />
             <label htmlFor="inputpassword">password</label>
           </div>
     
@@ -67,7 +41,7 @@ const Login = () => {
               <input type="checkbox" value="remember-me" /> Remember me
             </label>
           </div>
-          <button onClick={handleClick} className="btn btn-lg  btn-block mx-1 w-100  font-weight-bold" style={{background: "gold",fill: "gold"}}  type="submit"><Link to="/Admin">Sign in</Link></button>
+          <button className="btn btn-lg  btn-block mx-1 w-100  font-weight-bold" style={{background: "gold",fill: "gold"}}  type="submit"><Link to="/Admin">Sign in</Link></button>
                     <p className="role">Login As an Artist</p>
 
         </form>
