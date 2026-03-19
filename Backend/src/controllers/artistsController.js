@@ -16,7 +16,7 @@ export async function createArtist(req,res){
     genre:req.body.genre
         })
     console.log(req.body.artist_name,req.body.bio,req.body.genre);
-    art.save()
+    // art.save()
 try {
     // const New_user=await art.save();
     res.status(201).json({message: "User Added successfully"});

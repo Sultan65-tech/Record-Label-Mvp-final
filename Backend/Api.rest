@@ -4,7 +4,7 @@ POST http://localhost:3000/api/artists
 Content-Type: application/json
 
 {
-    "artist_name":"Big hookz",
+    "artist_name":"Sultan",
     "bio":"Programmer",
     "genre":"Hip-Hop"
 }
