@@ -8,6 +8,10 @@ import Footer from "../components/Footer"
 import {MdArrowCircleLeft,MdArrowCircleRight} from "react-icons/md"
 import JB from "../Images/justin1.jpg"
 import { Data } from '../Data'
+
+
+
+const change = Data.length=3;
 const Studio = () => {
   const [count,setCount] = useState(0)
  
@@ -37,7 +41,7 @@ const Studio = () => {
         </marquee>
         <section className="studio-carousel">
             <div className="studio-carousel-grid">
-             <h1>Nigeria</h1>
+             <h1>NEWS</h1>
                <div className="studio-carousel-flex">
                    <div><MdArrowCircleLeft size={70} cursor={"pointer"} color="gold" onClick={(()=>{})}/></div>
                    <div className='carousel-content'>
@@ -58,9 +62,19 @@ const Studio = () => {
                  </div>
        
            </section>
-        <Artistall/>
+       <div style={{marginTop:"5%"}}>
+        
+        <h1>NEWS</h1>
+            <div className='testimonial-grid'>
+    {Data.map((music)=>{
+      return(
+      <Artistall image={music.image} name={music.name}/>
+      )
+    })}
+    </div>
         <Newsletter/>
         <Footer/>
+       </div>
  </>
   )
 }

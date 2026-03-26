@@ -5,10 +5,13 @@ import Newletter from '../components/Newsletter'
 import Artistall from '../components/Artistall'
 import {Data} from '../Data'
 import "../Navbar.css"
+import {MdStars} from "react-icons/md"
 import Img from "../Images/WHIZDOM (2).jpg"
 import MusicPlayer from "../components/MusicPlayer"
-const change = Data.length=3;
+import FancyButton from '../components/FancyButton'
+const change = Data.length=5;
 console.log(change)
+console.log(Data);
 
 const Music = () => {
   return (
@@ -28,11 +31,34 @@ const Music = () => {
     </div>
   </div>
   </div>
-<MusicPlayer audioSrc="src/Justin_Beiber_-_You_and_me_(mp3.pm).mp3"/>
+  <div className="music-player" id="Music">
+  
+  <div className="music-player-text">
+    <h1>Hot <MdStars size={"50px"}  style={{position:"relative",top:"7px",left:"3px"}}/> Music</h1>
+    {/* <!-- scroll-snap-style:y mandatory;
+    scale:1.05; --> */}
+    <div className="music_player_grid">
+<MusicPlayer/>
+<MusicPlayer/>
+<MusicPlayer/>
+    </div>
+    <FancyButton/>
+    </div>
+    </div>
+    
+
   <div className='musicians'>
+<div className='testimonial'>
+        <div className='testimonial-heading'><h1>Artists</h1></div>
+        <div className='testimonial-grid'>
     {Data.map((music)=>{
+      return(
       <Artistall image={music.image} name={music.name}/>
+      )
     })}
+    </div>
+
+     </div>
   </div>
 <section id="favorites">
     <div className="fav-text">

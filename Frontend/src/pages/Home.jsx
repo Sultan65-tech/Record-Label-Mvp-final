@@ -7,6 +7,7 @@ import Newsletter from "../components/Newsletter"
 import ArtistCard from '../components/ArtistCard'
 import Release from "../components/Release"
 import Footer from '../components/Footer'
+import Promotion from '../components/Promotion'
 
 const Home = () => {
   return (
@@ -14,8 +15,9 @@ const Home = () => {
    
     <Hero />
    <Release/>
-<Join/>
+<Promotion/>
 <Newsletter/>
+<Join/>
 <Footer/>
    </>
   )

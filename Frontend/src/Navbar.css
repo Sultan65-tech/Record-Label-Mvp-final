@@ -44,6 +44,7 @@ z-index: -1;
       flex-direction:row;
   }
 }
+
 .slide-show{
   display: flex;
   justify-content: center;
@@ -65,8 +66,6 @@ header{
   width: 100%;
   top:0;
   z-index: 999;
-  /* background-color: #1d1c1c; */
-  /* box-shadow: 2px 2px 2px black; */
  border-bottom: 2px solid gold;
 }
 .navbar{
@@ -100,7 +99,8 @@ header b{
   position: absolute;
   top:14px;
   font-size:17px;
-  font-family: cursive;
+  font-weight: 700;
+  font-family:"Roboto Mono", sans-serif;
   left:8%;
   right:900px;
   color: white;
@@ -124,17 +124,20 @@ header b{
   color: gold;
   border-bottom: 2px solid gold;
 }
-.navbar ul li a:hover video{
+/* Video */
+video{
   width:100%;
-  height:670px;
+  height:700px;
   position: absolute;
   top:0;
-    opacity:0.7;
-    object-fit:cover;
-    /* z-index: -99; */
+    opacity:0.6;
+    object-fit: cover;
+    z-index: -1;
+}
+.background-video{
+z-index: -1;
 }
 .content{
-/* border: 8px solid #D4AF37; */
    animation: slideTop .5s ease forwards;
      animation-delay: calc(.2s * var(--i));
 width:70%;
@@ -152,8 +155,9 @@ font-size:80px;
 padding-top:80px;
 text-align: center;
 line-height:6rem;
+font-weight: 700;
+font-family: "Roboto ", sans-serif;
 color:#EAEAEA;
-font-family: "Roboto", sans-serif;
 }
 .signed{
   display: flex;
@@ -161,18 +165,18 @@ font-family: "Roboto", sans-serif;
   left:234px;
   top:20px;
   position:relative;
-  /* justify-content:center;
-  align-items: center; */
+
 }
 .signed img{
  width: 50px;
  height:50px;
  border-radius:50px;
- border:2px solid gold;
+ border:3px solid gold;
 }
 .signed span{
   color:white;
-  font-weight:55;
+  font-weight:400;
+  font-family: "inter", sans-serif;
   padding-left:25px;
   padding-top:10px;
   font-size:23px;
@@ -218,6 +222,7 @@ font-family: "Roboto", sans-serif;
   margin-bottom:3%;
   font-size:35px;
   font-weight:700;
+  font-family: "Space Grotesk", sans-serif;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -237,7 +242,6 @@ font-family: "Roboto", sans-serif;
     height: 460px;
     background:#242323;
     border-bottom: 4px solid gold;
-    /* filter: drop-shadow(4px 4px 8px #1d1c1c); */
      box-shadow: 0 0 15px #1d1c1c,
          0 0 30px #1d1c1c;
     border-radius:15px;
@@ -249,13 +253,14 @@ font-family: "Roboto", sans-serif;
     transform: translateY(-7px);
       box-shadow: 0 0 30px gold;
   }
-  .flex-artist h2{
-        font-weight: bold;
+  /* .flex-artist h2{
+        font-weight:400;
       font-size: 36px;
+      font-family: "Roboto", sans-serif;
       padding-top:30px;
     color: white;
         text-shadow: 2px 2px 4px black;
-  }
+  } */
   .card-content{
     display: flex;
     flex-direction:column;
@@ -268,11 +273,15 @@ font-family: "Roboto", sans-serif;
   }
   .title-music .title p{
     font-size: 25px;
+    font-weight: 400;
+    font-family: "inter",sans-serif;
     color: white;
   }
   .title-music .artist p{
     font-size:18px;
     padding-top:5px;
+     font-weight: 700;
+    font-family: "inter",sans-serif;
     color: white;
   }
   .listen button{
@@ -281,7 +290,8 @@ font-family: "Roboto", sans-serif;
     background: gold;
     border-radius:5px;
     font-size:18px;
-    font-weight:99;
+    font-weight:600;
+     font-family: "inter",sans-serif;
     border:none;
     margin-top:9px;
     cursor: pointer;
@@ -316,7 +326,8 @@ font-family: "Roboto", sans-serif;
     width:280px;
     height:70px;
     font-size:30px;
-    font-weight: 600;
+        font-weight:600;
+     font-family: "inter",sans-serif;
        border: none ;
        border-radius: 5px;
   background-color: gold;
@@ -378,6 +389,95 @@ gap:2em;
   gap: 2em;
   align-items: center;
   margin-bottom:50px;
+  
+}
+.book_show .btn-gold{
+font-size: 30px;
+padding: 10px;
+width:250px;
+height:80px;
+border-radius:5px;
+border: none;
+background: gold;
+color: black;
+cursor: pointer;
+  font-weight:700;
+     font-family: "inter",sans-serif;
+}
+.book_show .btn-white{
+font-size: 30px;
+padding: 10px;
+width:250px;
+height:80px;
+border-radius:5px;
+border:none;
+color: black;
+  background:white ;
+ font-weight:700;
+     font-family: "inter",sans-serif;
+box-shadow: 2px 3px 3px 2px black;
+cursor: pointer;
+}
+.btn-gold:hover{
+  transition: all 0.2s;
+border:none;
+  background:white;
+}
+.btn-white:hover{
+  transition: ease-in 0.2s;
+border:none;
+  background:gold;
+  color: black;
+}
+
+/* Promotion */
+.Promotion{
+  background-image: url("../src/Images/show.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:80vh;
+}
+  .book_show{
+    position: relative;
+    top:8%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  gap:3em;
+}
+.show-item{
+display: flex;
+flex-direction: column;
+gap:2em;
+  justify-content:space-between;
+  align-items:space-between;
+}
+.book_show h1{
+  color: gold;
+  font-size:64px;
+  text-align: center;
+  padding-top:50px;
+  font-weight: 700;
+   font-family: "syne", monospace;
+}
+.book_show p{
+  color: whitesmoke;
+  font-size:30px;
+  /* padding-top:80px; */
+  line-height:3rem;
+  opacity: 80%;
+  text-shadow: 7px 7px 7px black;
+  font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+}
+.book-btn{
+  display: flex;
+  justify-content:center;
+  gap: 2em;
+  align-items: center;
+  margin-bottom:50px;
 }
 .book_show .btn-gold{
 font-size: 30px;
@@ -416,8 +516,6 @@ border:none;
   background:gold;
   color: black;
 }
-
-
 
 /* New-Letter */
 
@@ -726,35 +824,24 @@ video{
 .music-section{
   position: relative;
     top:120px;
-    /* overflow-y: hidden;
-    overflow-y: hidden; */
 }
-video{
-  width:100%;
-  height:700px;
-  position: absolute;
-  top:0;
-    opacity:0.6;
-    object-fit: cover;
-    z-index: -1;
-}
-.background-video{
-z-index: -1;
-}
+
 .text{
     padding-top: 80px;
 }
 .music-section p{
   font-size:25px;
-  font-weight:500;
+   font-weight: 700;
+    font-family: "inter",sans-serif;
   padding-top:15px;
     text-align: center;
    color:#EAEAEA;
-   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 2px;
 }
 
 .music-section h1{
+  font-weight: 700;
+font-family: "Roboto ", sans-serif;
     font-size: 70px;
     color:#EAEAEA;
         text-align: center;
@@ -767,14 +854,16 @@ z-index: -1;
     gap: 2em;
 }
 .call-to-action button{
+    font-weight:700;
+     font-family: "inter",sans-serif;
     width: 300px;
     height:50px;
     border: none;
     font-size:20px;
     letter-spacing: 2px;
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; */
     border-radius: 5px;
 }
 .one{
@@ -793,24 +882,21 @@ z-index: -1;
   margin-top:48%;
   
 }
-
- .music-image{
-              margin: 25px;
-        height: 300px;
-        width: 500px;
-        background-image: URL("../src/Images/justin1.jpg");
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px;
-            }
+.music_player_grid{
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: space-around;
+}
 .music-player h1{
   text-align: center;
   color:gold;
-  font-size:40px;
-    padding-top:5px;
-    padding-bottom:20px;
-  font-weight:555;
-  text-shadow: 2px 3px 3px black;
+  font-size:50px;
+  padding-top:5px;
+  padding-bottom:20px;
+ font-weight:700;
+  font-family: "Space Grotesk", sans-serif;
+  /* text-shadow: 2px 3px 3px black; */
 }
 .music-player-text{
   width:80%;
@@ -824,20 +910,46 @@ z-index: -1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 20rem;
+  background:#242323;
+  border-radius: 0.5rem;
+  padding: 1rem;
+   border-top: 3px solid rgb(69, 69, 241);
+  border-left: 3px solid gold;
+    border-bottom: 3px solid black;
+      /* border-right: 2px solid orange; */
+  filter:drop-shadow(2px 2px 2px rgb(49, 49, 49));
 }
+
+.music-image img{
+       height: 250px;
+       width: 250px;
+       border-radius:50%;
+       animation: rotate 20s linear infinite;
+      }
+      @keyframes rotate {
+        from{
+          transform: rotate(0deg);
+        }to{
+          transform: rotate(360deg);
+        }
+      }
 .music-title{
   text-align: center;
 }
 .music-title h2{
-  font-size:48px;
+  font-size:38px;
   color: white;
+  font-weight: 600;
   font-family:"Roboto", sans-serif;
   padding: 15px 0;
 }
 .music-title p{
-  font-size: 25px;
+  font-size:18px;
   color: white;
   padding-bottom: 5PX;
+  font-weight:700;
+  font-family: "Roboto Mono",monospace;
 }
 .controls{
   display: flex;
@@ -845,13 +957,13 @@ z-index: -1;
   /* justify-content: center;
   align-items: center; */
   /* flex-direction: row;
-  gap:1em; */
+  /* gap:1em; */ 
 }
 .icon1{
   fill: gold;
 padding: 15px;
-    font-size:50px;
-    width: 120px;
+    font-size:20px;
+    width:70px;
     cursor: pointer;
 }
    /* Define the slider width so that it scales properly */
@@ -938,14 +1050,17 @@ padding: 15px;
     }
     .testimonial-heading h1{
       letter-spacing:3px;
+      font-weight:700;
+  font-family: "Space Grotesk", sans-serif;
     }
 .testimonial-grid{
   display:grid;
- grid-template-columns: 100px 100px 100px ;
+ grid-template-columns: 200px 200px 200px ;
    justify-content: center;
-   column-gap:17em;
-   row-gap: 2em;
    align-items: center;
+   column-gap:10em;
+   row-gap: 2em; 
+    
 }
 .testimonial-flex{
   display: flex;
@@ -959,13 +1074,14 @@ padding: 15px;
 .testimonial-flex p{
   font-size: 20px;
   padding-top: 15px;
+  font-weight: 700;
+font-family: "Roboto ", sans-serif;
   color:white;
   text-align: center;
 }
 
     /* FAVOURITE ARTIST SECTION */
     #favorites{
-      /* position: relative; */
       margin-top:10%;
       text-align: center;
       color: white;
@@ -973,12 +1089,16 @@ padding: 15px;
     .fav-text h1{
       font-size:40px;
       padding-bottom: 50px;
+      font-weight: 700;
+font-family: "Roboto ", sans-serif;
     }
     /* Recommendation Section */
      .music-list h1{
       text-align: left;
       font-size: 48px;
       color: gold;
+      font-weight: 700;
+font-family: "Roboto ", sans-serif;
      }
         .music-list{
           flex: 3;
@@ -991,8 +1111,9 @@ padding: 15px;
         .music-list h3 {
             margin: 10px 0;
             font-size: 28px;
-            font-weight: normal;
+            font-weight:700;
             color:white;
+            font-family: "Space Grotest",sans-serif;
         }
         .music-info{
           flex: 2;
@@ -1007,14 +1128,16 @@ padding: 15px;
     border-radius: 20px;
 }
 .music-info h2{
-      /* margin: 10px 0; */
+  font-weight:700;
+  font-family: "Roboto", sans-serif;
     font-size:36px;
     color:gold;
 }
 .music-info h5 {
     font-size: 28px;
     color:gold;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Roboto Mono ",monospace;
     opacity:70%;
     padding: 20px 0;
 }
@@ -1022,6 +1145,7 @@ padding: 15px;
     padding: 10px 40px;
     font-size: 32px;
     background-color:gold;
+    font-family: "syne",monospace;
     border-radius: 10px;
     margin-top:20px;
     border: none;

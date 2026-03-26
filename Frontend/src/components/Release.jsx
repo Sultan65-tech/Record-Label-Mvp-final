@@ -1,6 +1,7 @@
 import React from 'react'
 import { Music } from '../Data'
 import ArtistCard from './ArtistCard'
+import FancyButton from './FancyButton';
 // import { useState } from 'react';
 
 const change= Music.length=3;
@@ -21,9 +22,7 @@ const Release = () => {
               })
             }
               </div>
-      <div className="seemore">
-      <button className="seemore-btn"><a href="../HTML/music.html">see more </a></button>
-    </div>
+    <FancyButton/>
   </section>
     </>
   )
