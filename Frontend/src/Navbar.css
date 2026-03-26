@@ -517,13 +517,12 @@ border:none;
   color: black;
 }
 
-/* New-Letter */
+/* News-Letter */
 
 
 .news-letter{
   margin-top: 30px;
   margin-bottom:90px;
-  /* margin-left:50px; */
   justify-content:space-around;
   display: flex;
   flex-direction: row;
@@ -532,17 +531,19 @@ border:none;
   margin-left:7 0px;
 }
 summary{
-  font-size: 25px;
+  font-size: 22px;
   padding-top: 30px;
   padding-bottom: 10px;
     padding-left:30px;
+    font-weight:600;
+font-family: "Roboto Mono", sans-serif;
   color: rgb(255, 249, 249);
 }
 .news-letter h1{
 font-size:70px;
-/* line-height:1.3rem; */
+font-weight:700;
+font-family: "Space Grotesk", sans-serif;
 color: white;
-font-family: sans-serif;
 padding-top:130px;
 padding-left:30px
 }
@@ -554,6 +555,7 @@ details p{
   font-size:22px;
   color:rgb(209, 203, 203);
   line-height:27px;
+  font-family: "Space Grotesk", sans-serif;
 }
 fieldset{
   width:450px;
@@ -641,7 +643,6 @@ footer{
   background-image: -webkit-linear-gradient(180deg,
     rgba(34, 0, 0, 0) 0%,
       rgb(22, 21, 21) 100%);
-      /* margin-top: 10px; */
 }
 footer .flex{
   display: flex;
@@ -655,6 +656,7 @@ footer .flex h2{
   padding-left:25px;
   padding-top:40px;
   padding-bottom:10px;
+  font-family: "Space Grotesk",sans-serif;
 }
 .flex ul{
   padding:20px;
@@ -663,6 +665,8 @@ footer .flex h2{
 .flex ul li{
   padding:8px;
   font-size:19px;
+  font-weight: 400;
+  font-family: "Space Grotesk",sans-serif;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) ease-in;
   cursor: pointer;
   color: whitesmoke;
@@ -1069,7 +1073,8 @@ padding: 15px;
   align-items: center;
 }
 .testimonial-flex img{
-   border:3px solid gold;
+  object-fit:cover;
+   border:4px solid gold;
 }
 .testimonial-flex p{
   font-size: 20px;

@@ -7,6 +7,7 @@ import "@fontsource/syne/800.css";
 
 // Futuristic Subheaders
 import "@fontsource/space-grotesk"
+import "@fontsource/space-grotesk/400.css";
 import "@fontsource/space-grotesk/700.css";
 
 // The "Workhorse" for clean body text
@@ -18,6 +19,7 @@ import "@fontsource/inter/700.css";
 import "@fontsource/roboto-mono"
 import "@fontsource/roboto"
 import "@fontsource/roboto-mono/400.css";
+import "@fontsource/roboto-mono/600.css";
 import "@fontsource/roboto/600.css";
 import "@fontsource/roboto/700.css";
 
