@@ -1,4 +1,6 @@
 import React from "react"
+import {Link} from "react-router-dom"
+import Promote from "./Promote"
 
 const Promotion=()=>{
     return(
@@ -10,8 +12,9 @@ const Promotion=()=>{
     </div>
    <div className="book-btn">
     {/* Transfor to a component */}
-     <a href="https://www.facebook.com/tannika.boutminemay" style={{textDecoration:"none",color: "black"}}><button className="btn-gold">Promote Now</button></a>
-    <a href="https://www.facebook.com/tannika.boutminemay" style={{textDecoration:"none",color: "black"}}> <button className="btn-white">Explore more!!</button></a>
+
+     <Link to="/promote" style={{textDecoration:"none",color: "black"}}><button className="btn-gold">Promote Now</button></Link>
+    <Link to="https://www.facebook.com/tannika.boutminemay" style={{textDecoration:"none",color: "black"}}> <button className="btn-white">Explore more!!</button></Link>
    </div>
   </div>
 </section>

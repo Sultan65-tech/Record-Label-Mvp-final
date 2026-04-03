@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --input-padding-x: .75rem;
   --input-padding-y: .75rem;
 }
@@ -6,7 +6,7 @@ body{
   overflow-y: hidden;
   background-color: rgb(3, 1, 14);
   z-index: 999;
-}
+} */
 .parent{
   display: flex;
   flex-direction: row;
@@ -78,7 +78,7 @@ width:150%;
   width: 100px;
   height: 100px;
 }
-.grid-star{
+.gridStar{
   display: flex;
   flex-direction: row;
   align-items: center;

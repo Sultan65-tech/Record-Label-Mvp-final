@@ -399,13 +399,12 @@ border:none;
   margin-top: 30px;
   margin-bottom:20px;
   height:80vh;
-  /* margin-left:50px; */
   justify-content:space-around;
   display: flex;
   flex-direction: row;
 }
 .info{
-  margin-left:7 0px;
+  margin-left:70px;
 }
 summary{
   font-size: 25px;
@@ -416,7 +415,6 @@ summary{
 }
 .news-letter h1{
 font-size:80px;
-/* line-height:1.3rem; */
 color: white;
 font-family: sans-serif;
 padding-top:80px;
@@ -450,7 +448,6 @@ legend{
 
 fieldset input[type="text"],input[type="email"]{
 width: 480px;
-/* height: 55px; */
 margin-top:20px;
 margin-left: 30px;
 margin-bottom:6px;

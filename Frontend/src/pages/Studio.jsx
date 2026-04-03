@@ -64,11 +64,12 @@ const Studio = () => {
            </section>
        <div style={{marginTop:"5%"}}>
         
-        <h1>NEWS</h1>
+                <div className='testimonial-heading'><h1>Artists</h1></div>
             <div className='testimonial-grid'>
     {Data.map((music)=>{
       return(
-      <Artistall image={music.image} name={music.name}/>
+        
+      <Artistall key={music.id} image={music.image} name={music.name}/>
       )
     })}
     </div>

@@ -1,7 +1,6 @@
 import {  useState } from "react"
 import {Link} from "react-router-dom"
 // import "../bootstrap.css"
-import"../Navbar.css"
 // import "../Login.css"
 // import Admin from "../components/Admin"
 
