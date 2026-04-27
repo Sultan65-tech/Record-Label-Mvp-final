@@ -25,6 +25,15 @@ function App() {
 
     </>
   )
+//   \
+
+
+// db.products.updateOne({_id:1},{$set:{reviews:[{authorName:"Mubarak",rating:3,review:"Awesome pen ever"},
+//   {authorName:"james",rating:9,review:"Amazing pencil"}]
+// }}
+
+
+
 }
 
 export default App
